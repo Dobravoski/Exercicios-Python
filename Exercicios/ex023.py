@@ -1,0 +1,11 @@
+n = int(input('Digite um número de 0 a 9999: '))
+#n2 = str(int(n + 10000))
+#print(f'Unidades: {n2[4]}')
+#print(f'dezena: {n2[3]}')
+#print(f'centena: {n2[2]}')
+#print(f'milhar: {n2[1]}')
+#Esse método também da certo, no entanto o do video foi esse:
+print(f'Unidades: {n // 1 % 10}')
+print(f'dezena: {n // 10 % 10}')
+print(f'centena: {n // 100 % 10}')
+print(f'milhar: {n // 1000 % 10}')
